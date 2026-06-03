@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import "./App.css";
-import CommentForm from "./components/commentform";
+import CommentForm from "./components/commentinput";
 import CommentList from "./components/commentlist";
 import { useLocalStorage } from "./hooks/uselocalstorage";
 import type { Comment } from "./types";
