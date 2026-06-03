@@ -26,6 +26,11 @@ export default function CommmentForm({
             type="text"
             value={text}
             onChange={(e) => setText(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                handleSubmit();
+              }
+            }}
             placeholder={placeholder}
             className="h-10 w-64 px-3 text-lg text-black border border-gray-400 rounded ml-5 mt-5"
           />
